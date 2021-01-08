@@ -1,8 +1,8 @@
-title: Israh Theme
-email: your@email.here
-greeting: Israh Theme
+title: Turtlebot3 with ROS2
+email: dustnia11@naver.com
+greeting: 개발일지
 description: > # this means to ignore newlines until another tag
-    Israh is a responsive Jekyll theme with warm greys, a single column layout, and not much else.
+    turtlebot3로 camera calibration 수행을 목표로 하고있습니다.
 favicon: favicon.png
 navlinks:
     -
