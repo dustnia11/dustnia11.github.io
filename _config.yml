@@ -21,9 +21,9 @@
 title: Turtlebot3 with ROS2
 email: dustnia11@naver.com
 description: >- # this means to ignore newlines until "baseurl:"
-  turtlebot3로 camera calibration 수행을 목표로 하고있습니다.
+  (Doing) camera calibration by turtlebot3
 baseurl: "https://dustnia11.github.io" # the subpath of your site, e.g. /blog/
-url: "http://dustnia11.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "http://dustnia11.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: dustnia11
 highlighter: rouge
 svg:
