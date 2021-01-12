@@ -33,13 +33,13 @@ ROS1에서는 로봇 시스템을 시작하는 단계에서 반드시 ros core �
 $ ros2 run turtlesim turtlesim_node
 ````
 
-![image-20210112162245669](C:\Users\208\AppData\Roaming\Typora\typora-user-images\image-20210112162245669.png)
+![turtlesim_node](C:\SPB_Data\JaeYoon\dustnia11.github.io\img\turtlesim_node.png)
 
 ```
 $ ros2 run turtlesim turtle_teleop_key
 ```
 
-![image-20210112162311555](C:\Users\208\AppData\Roaming\Typora\typora-user-images\image-20210112162311555.png)
+![turtlesim_teleop](C:\SPB_Data\JaeYoon\dustnia11.github.io\img\turtlesim_teleop.png)
 
 서로 다른 터미널에서 두 노드를 실행시키면 키보드의 방향키와 f를 중심으로 한 키셋으로 거북이를 움직일 수 있다.
 
@@ -57,7 +57,7 @@ $ ros2 node info /turtlesim
 /teleop_turtle
 ```
 
-```$ ros2 node info /turtlesim
+```
 /turtlesim
  Subscribers:
   /parameter_events: rcl_interfaces/msg/ParameterEvent
@@ -88,6 +88,8 @@ $ ros2 node info /turtlesim
   /turtlesim/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
 ```
 
+
+
 위와 같이 publisher, subscriber, services 등에 관한 정보를 확인할 수 있다.
 
 <!--각각의 용어는 패키지 작성 포스트에서 설명한다.-->
@@ -100,4 +102,4 @@ rqt_graph 명령어를 통해 연결 상태를 간단한 그래프로 확인할 
 $ rqt_graph
 ```
 
-![image-20210112162416972](C:\Users\208\AppData\Roaming\Typora\typora-user-images\image-20210112162416972.png)
+![turtlesim_rqtgraph](C:\SPB_Data\JaeYoon\dustnia11.github.io\img\turtlesim_rqtgraph.png)
