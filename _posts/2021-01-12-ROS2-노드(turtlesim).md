@@ -29,17 +29,21 @@ ROS1에서는 로봇 시스템을 시작하는 단계에서 반드시 ros core �
 
 간단한 turtlesim 예제를 통해 구조를 확인해보자
 
+ **turtlesim 노드 실행**
+
 ````
 $ ros2 run turtlesim turtlesim_node
 ````
 
-![turtlesim_node](C:\SPB_Data\JaeYoon\dustnia11.github.io\img\turtlesim_node.png)
+![turtlesim_node](https://user-images.githubusercontent.com/31915036/104284674-bd06eb00-54f5-11eb-95ef-ce777cefbac8.png)
+
+**turtlesim teleop 노드 실행**
 
 ```
 $ ros2 run turtlesim turtle_teleop_key
 ```
 
-![turtlesim_teleop](C:\SPB_Data\JaeYoon\dustnia11.github.io\img\turtlesim_teleop.png)
+![turtlesim_teleop](https://user-images.githubusercontent.com/31915036/104284729-d90a8c80-54f5-11eb-90e6-1db4e316f60e.png)
 
 서로 다른 터미널에서 두 노드를 실행시키면 키보드의 방향키와 f를 중심으로 한 키셋으로 거북이를 움직일 수 있다.
 
@@ -51,6 +55,8 @@ $ ros2 node info /turtlesim
 ```
 
 을 입력해본다.
+
+**출력 **
 
 ```
 /turtlesim
@@ -102,4 +108,4 @@ rqt_graph 명령어를 통해 연결 상태를 간단한 그래프로 확인할 
 $ rqt_graph
 ```
 
-![turtlesim_rqtgraph](C:\SPB_Data\JaeYoon\dustnia11.github.io\img\turtlesim_rqtgraph.png)
+![turtlesim_rqtgraph](https://user-images.githubusercontent.com/31915036/104284758-e45db800-54f5-11eb-97d5-97602ba4b759.png)
