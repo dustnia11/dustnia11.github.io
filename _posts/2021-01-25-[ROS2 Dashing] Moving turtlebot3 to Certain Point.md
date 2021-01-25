@@ -18,7 +18,7 @@ ros에서는 주로 /cmd_vel이라는 topic으로 메시지가 오가며, gemetr
 
 ```python
 linear:
-	x
+    x
     y
     z
 angular:
@@ -183,4 +183,4 @@ int main(int argc, char * argv[])
 }
 ```
 
-![moving_certain_point_gif](https://imgur.com/4z9RrH6)
+![Imgur](https://imgur.com/4z9RrH6)
