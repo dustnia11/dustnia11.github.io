@@ -8,6 +8,8 @@ Turtlebot3 emanual을 따라하다 보면 Navigation 패키지에서 지도 상�
 
 
 
+
+
 일단은 가장 먼저 공부한 Topic을 통한 송수신을 사용하였고, 아마 추후에 업데이트 하게된다면 Action을 사용하게 될 것 같다.
 
 따라서 노드를 작성하기에 앞서 반드시 알아야 하는 부분은 어떤 형식의 메시지를 송수신 해야하며, 어떤 토픽을 사용하는가에 대한 내용이다.
@@ -28,6 +30,8 @@ angular:
 ```
 
 turtlebot3에서는 linear.x가 직진 속도, angular.z가 반시계방향 회전 속도 담당하는 변수다.
+
+
 
 
 
@@ -55,11 +59,15 @@ orientation:
 
 
 
+
+
 Position은 우리가 흔히 생각하는 3차원 직각좌표계와 동일하게 볼 수 있다.
 
 일단 로봇이 z=0 평면에서만 움직인다고 가정하고, position에서 (x,y) 좌표를 통해 목적지까지 도달했는지 판단한다.
 
 목적지까지 이동할 때 축에 평행한 방향으로 움직이는 것이 아니라 한 번의 직진으로 도착할 수 있도록 로봇을 회전시키게 되는데, 이 과정에서 Quaternion을 사용한다.
+
+
 
 
 
@@ -94,6 +102,8 @@ double yaw = std::atan2(siny_cosp, cosy_cosp);
 
 
 
+
+
 동작 방식은 우선 로봇을 목적지 방향까지 회전시킨 후 목표 지점과 angle이 동일하다면 직진한다.
 
 이후 목적지에 도착하면 정지한다.
@@ -102,7 +112,11 @@ angle과 position의 오차는 if문을 수정해서 고칠 수 있고, odometry
 
 
 
+
+
 목적지는 우선 코드 내에서 전역변수로 추가해뒀고, 수정 업데이트 예정에 있다.
+
+
 
 
 
@@ -183,4 +197,5 @@ int main(int argc, char * argv[])
 }
 ```
 
-![Imgur](https://imgur.com/4z9RrH6)
+![moving_certain_point_resize](https://user-images.githubusercontent.com/31915036/105667034-effda580-5f1d-11eb-93c1-99c21b5e3790.gif)
+
